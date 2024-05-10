@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="/css/grading.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Grading System</h1>
+        </div>
+        <div class="input-container">
+            <div class="input-field">
+                <label for="eng">English</label>
+                <input type="text" id="eng">
+            </div>
+            <div class="input-field">
+                <label for="mat">Math's</label>
+                <input type="text" id="mat">
+            </div>
+            <div class="input-field">
+                <label for="phy">Physics</label>
+                <input type="text" id="phy">
+            </div>
+            <div class="input-field">
+                <label for="urd">Computer</label>
+                <input type="text" id="urd">
+            </div>
+            <div class="input-field">
+                <label for="sci">Science</label>
+                <input type="text" id="sci">
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn" onclick="total()">Total</button>
+            <button class="btn" onclick="Average()">Average</button>
+            <button class="btn" onclick="grade()">Grade</button>
+        </div>
+        <div id="result" class="result-container">
+            <div class="result">
+                <div class="result-heading">Total</div>
+                <div id="total" class="result-content"></div>
+            </div>
+            <div class="result">
+                <div class="result-heading">Average</div>
+                <div id="ave" class="result-content"></div>
+            </div>
+            <div class="result">
+                <div class="result-heading">Remarks</div>
+                <div id="grade" class="result-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/grading.js"></script>
+</body>
+
+</html>
